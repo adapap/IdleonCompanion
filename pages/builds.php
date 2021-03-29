@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <div class="row pl-3 mb-4">
-    <div class="form-group">
-      <select class="custom-select" id="buildSelector">
+    <div class="input-group">
+      <select class="form-select" id="buildSelector">
         <option value="0" selected>Select Your Build</option>
       </select>
     </div>

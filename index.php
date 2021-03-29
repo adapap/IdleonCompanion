@@ -30,7 +30,7 @@
 					<h1 class="display-4 text-light d-sm-inline-block d-none align-middle ml-4">Idleon Companion B5</h1>
 			</div>
 			<div class="col-3">
-				<a type="button" class="btn btn-outline-light m-2" data-toggle="modal" data-target="#clockModal">
+				<a type="button" class="btn btn-outline-light m-2" data-bs-toggle="modal" data-bs-target="#clockModal">
 					<p class="m-0 text-left"><small>Reset Timer</small></p>
 					<h3 class="display-4 m-0"  id="clock"></h3>
 				</a>
@@ -43,9 +43,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLabel">Configure Reset Timer </h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 					</div>
 					<div class="modal-body">
 						<p class="text-light">Insert the hours and minutes of your reset timer</p>
@@ -55,8 +53,8 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button onclick="saveOffset()" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button onclick="saveOffset()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
 					</div>
 				</div>
 			</div>
@@ -66,16 +64,14 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="resetModalLabel">It's a new day!</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
 					</div>
 					<div class="modal-body">
-						<p class="text-light">Your timer expired, Would you like to reset your daily tasks?. </p>
+						<p>Your timer expired, Would you like to reset your daily tasks?. </p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button onclick="resetDailies()" type="button" class="btn btn-primary" data-dismiss="modal">Reset Dailies</button>
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button onclick="resetDailies()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Reset Dailies</button>
 					</div>
 				</div>
 			</div>
@@ -83,22 +79,22 @@
 		<!--  Nav  -->
 		<ul class="nav nav-tabs" role="tablist">
 			<li class="nav-item">
-				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tasks" type="button" role="tab" aria-controls="profile" aria-selected="false">Tasks</button>
+				<button class="nav-link text-light" data-bs-toggle="tab" data-bs-target="#tasks" type="button" role="tab" aria-controls="profile" aria-selected="false">Tasks</button>
 			</li>
 			<li class="nav-item ">
-				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#checklist" type="button" role="tab" aria-controls="profile" aria-selected="false">Checklist</button>
+				<button class="nav-link text-light" data-bs-toggle="tab" data-bs-target="#checklist" type="button" role="tab" aria-controls="profile" aria-selected="false">Checklist</button>
 			</li>
 			<li class="nav-item">
-				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#calc" type="button" role="tab" aria-controls="profile" aria-selected="false">King of Food</button>
+				<button class="nav-link text-light" data-bs-toggle="tab" data-bs-target="#calc" type="button" role="tab" aria-controls="profile" aria-selected="false">King of Food</button>
 			</li>
 			<li class="nav-item">
-				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#builds" type="button" role="tab" aria-controls="profile" aria-selected="false">Builds</button>
+				<button class="nav-link text-light" data-bs-toggle="tab" data-bs-target="#builds" type="button" role="tab" aria-controls="profile" aria-selected="false">Builds</button>
 			</li>
 			<li class="nav-item">
-				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#cards" type="button" role="tab" aria-controls="profile" aria-selected="false">Card Sets</button>
+				<button class="nav-link text-light" data-bs-toggle="tab" data-bs-target="#cards" type="button" role="tab" aria-controls="profile" aria-selected="false">Card Sets</button>
 			</li>
 			<li class="nav-item">
-				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#credits" type="button" role="tab" aria-controls="profile" aria-selected="false">Credits</button>
+				<button class="nav-link text-light" data-bs-toggle="tab" data-bs-target="#credits" type="button" role="tab" aria-controls="profile" aria-selected="false">Credits</button>
 			</li>
 		</ul>
 
@@ -108,11 +104,11 @@
 				<?php include "pages/tasks.php" ?>
 			</div>
 			<!-- checklist -->
-			<div class="tab-pane fade" id="checklist">
+			<div class="tab-pane fade jumbotron" id="checklist">
 				<?php include "pages/checklist.php" ?>
 			</div>
 			<!--  KING OF FOOD  -->
-			<div class="tab-pane fade" id="calc">
+			<div class="tab-pane fade jumbotron" id="calc">
 				<?php include "pages/king-of-food.php" ?>
 			</div>
 			<!--  BUILDS  -->
@@ -120,7 +116,7 @@
 				<?php include "pages/builds.php" ?>
 			</div>
 			<!--  CARD SETS -->
-			<div class="tab-pane fade p-3" id="cards">
+			<div class="tab-pane fade jumbotron" id="cards">
 				<?php include "pages/cards.php" ?>
 			</div>
 			<!--  CREDITS -->

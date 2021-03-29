@@ -4,8 +4,6 @@
         $data = json_decode(file_get_contents($dir), true);
       ?>
 
-    <div class="bg-secondary border border-light rounded-3 p-5" style="bg-">
-
     <?php foreach($data as $value): ?>
     <?php
       $title = $value['title'];
@@ -14,7 +12,7 @@
       $array3 = $value['minimal'];
     ?>
 
-      <div class="h1"><?php echo $title ?></div>
+      <div class="h1 text-light"><?php echo $title ?></div>
         <div class="row justify-content-start p-3">
           <div class="col-4 border border-secondary rounded p-2 w-auto" style="min-width:150px">
             <span class="badge badge-pill bg-secondary card-title px-4 py-1">Core Cards</span>
@@ -39,4 +37,3 @@
           </div>
         </div>
       <?php endforeach ?>
-    </div>

@@ -243,7 +243,7 @@ function stopClock(){
 }
 
 function taskNewDay(){
-  $('#resetModal').modal();
+  new bootstrap.Modal($('#resetModal')[0]).show();
 }
 
 function isNewDay(){
