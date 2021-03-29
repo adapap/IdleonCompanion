@@ -27,7 +27,7 @@
 		<div class="row justify-content-between pt-3">
 			<div class="col-xs-9">
 					<img class="img d-inline my-4 ml-4" style="height:6rem;" src="assets/images/bg/logo-clean.png">
-					<h1 class="display-4 d-sm-inline-block d-none align-middle ml-4">Idleon Companion</h1>
+					<h1 class="display-4 d-sm-inline-block d-none align-middle ml-4">Idleon Companion B5</h1>
 			</div>
 			<div class="col-xs-3">
 				<a type="button" class="btn btn-outline-light m-2" data-toggle="modal" data-target="#clockModal">
