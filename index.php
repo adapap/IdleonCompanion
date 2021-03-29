@@ -16,7 +16,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/custom.css?id=khaf">
 </head>
 
@@ -24,12 +24,12 @@
 
 <body>
 	<div class="container">
-		<div class="row justify-content-between pt-3">
-			<div class="col-xs-9">
+		<div class="row d-flex justify-content-between pt-3">
+			<div class="col-9 ">
 					<img class="img d-inline my-4 ml-4" style="height:6rem;" src="assets/images/bg/logo-clean.png">
-					<h1 class="display-4 d-sm-inline-block d-none align-middle ml-4">Idleon Companion B5</h1>
+					<h1 class="display-4 text-light d-sm-inline-block d-none align-middle ml-4">Idleon Companion B5</h1>
 			</div>
-			<div class="col-xs-3">
+			<div class="col-3">
 				<a type="button" class="btn btn-outline-light m-2" data-toggle="modal" data-target="#clockModal">
 					<p class="m-0 text-left"><small>Reset Timer</small></p>
 					<h3 class="display-4 m-0"  id="clock"></h3>
@@ -81,24 +81,24 @@
 			</div>
 		</div>
 		<!--  Nav  -->
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs" role="tablist">
 			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" href="#tasks">Tasks</a>
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#tasks" type="button" role="tab" aria-controls="profile" aria-selected="false">Tasks</button>
+			</li>
+			<li class="nav-item ">
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#checklist" type="button" role="tab" aria-controls="profile" aria-selected="false">Checklist</button>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#checklist">Checklist</a>
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#calc" type="button" role="tab" aria-controls="profile" aria-selected="false">King of Food</button>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link " data-toggle="tab" href="#calc">King of Food</a>
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#builds" type="button" role="tab" aria-controls="profile" aria-selected="false">Builds</button>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#builds">Builds</a>
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#cards" type="button" role="tab" aria-controls="profile" aria-selected="false">Card Sets</button>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#cards">Card Sets</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#credits">Credits</a>
+				<button class="nav-link" data-bs-toggle="tab" data-bs-target="#credits" type="button" role="tab" aria-controls="profile" aria-selected="false">Credits</button>
 			</li>
 		</ul>
 
@@ -131,7 +131,7 @@
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 		<script src="assets/js/main.js?9555"></script>
 	</div>
 	<div class="footer m-5">

@@ -1,4 +1,4 @@
-<div class="jumbotron pt-3">
+<div class="bg-light bg-gradient border border-light rounded-3 p-5">
   <div class="row">
     <div class="col">
       <h2 class="display-4">Credits</h2>
@@ -20,8 +20,8 @@
       <div class="h-75 overflow-auto" id="changelog" text="">
         <blockquote class="blockquote mt-3">
           <p class="lead mb-0">They always say time changes things, but you actually have to change them yourself.</p>
-          <footer class="blockquote-footer">Andy Warhol</footer>
         </blockquote>
+        <figcaption class="blockquote-footer">Andy Warhol</figcaption>
       </div>
     </div>
   </div>

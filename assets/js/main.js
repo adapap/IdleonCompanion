@@ -56,7 +56,12 @@ function updateChecklistStorage(){
 function updateContainer(box) {
   value = $(box).prop("checked");
   container = $(box).parents("label");
-  value ? container.removeClass("active") : container.addClass("active");
+
+  if(value){
+    container.addClass("done text-muted");
+  } else {
+    container.removeClass("done text-muted");
+  }
 }
 
 function updateProgress() {
@@ -307,7 +312,7 @@ $(document).on('shown.bs.tooltip', function (e) {
 $button.text(tasksData.buttonText);
 updateForm();
 updateChecklist();
-$('[data-toggle="tooltip"]').tooltip();
+//$('[data-toggle="tooltip"]').tooltip();
 $("#buildSelector").load("assets/php/dropdown.php?124", function(){
 });
 
